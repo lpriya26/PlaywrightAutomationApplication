@@ -73,20 +73,16 @@ API Tests
 
 Project Structure
 
-amazon-playwright-automation
-
-- pages
-  - HomePage.ts
-  - SearchResultsPage.ts
-  - ProductDetailsPage.ts
+PlaywrightAutomationApplication
 
 - tests
-  - ui
+  - UI Automation
     - home-page.spec.ts
     - search-product.spec.ts
     - product-details.spec.ts
-  - api
-    - resource-crud.spec.ts
+  
+  - API Automation
+    - pet-crud.spec.ts
 
 - verification
   - Screenshots
@@ -112,12 +108,12 @@ Execution
 
 1. Run all UI tests
 
-npx playwright test tests/ui
+npx playwright test tests/UI-Automation
 
 
 2. Run all API tests
 
-npx playwright test tests/api
+npx playwright test tests/API-Automation
 
 
 3. Run all tests
@@ -127,32 +123,32 @@ npx playwright test
 
 4. Run UI tests in headed mode
 
-npx playwright test tests/ui --headed
+npx playwright test tests/UI-Automation --headed
 
 
 5. Run UI tests on Chromium
 
-npx playwright test tests/ui --project=chromium
+npx playwright test tests/UI-Automation --project=chromium
 
 
 6. Run UI tests on Firefox
 
-npx playwright test tests/ui --project=firefox
+npx playwright test tests/UI-Automation --project=firefox
 
 
 7. Run UI tests on WebKit
 
-npx playwright test tests/ui --project=webkit
+npx playwright test tests/UI-Automation --project=webkit
 
 
 8. Run a specific UI test
 
-npx playwright test tests/ui/home-page.spec.ts
+npx playwright test tests/UI-Automation/home-page.spec.ts
 
 
 9. Run the API test
 
-npx playwright test tests/api/resource-crud.spec.ts
+npx playwright test tests/API-Automation/pet-crud.spec.ts
 
 
 10. View HTML report
